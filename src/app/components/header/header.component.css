@@ -7,13 +7,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-.container {
-  width: 600px;
-  margin: 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
 
 .title {
   color: var(--branco);
@@ -42,5 +35,5 @@ header {
   background: url("../../../assets/icons/icon-search.svg") no-repeat 5px center;
   background-size: 20px;
   padding-left: 30px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
