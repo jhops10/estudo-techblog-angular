@@ -2,8 +2,9 @@
 <app-header></app-header>
 <!-- Header -->
 <div class="main-container">
-  <app-notice></app-notice>
-  <app-notice></app-notice>
-  <app-notice></app-notice>
-  <app-notice></app-notice>
+  <app-notice
+    *ngFor="let notice of notices"
+    title="{{ notice.title }}"
+    content="{{ notice.content }}"
+  ></app-notice>
 </div>

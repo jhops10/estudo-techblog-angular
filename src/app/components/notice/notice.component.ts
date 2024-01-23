@@ -15,4 +15,8 @@ export class NoticeComponent {
 
   @Input()
   data: string = this.dataAtual.toLocaleDateString('pt-BR', this.options);
+  @Input()
+  title: string = '';
+  @Input()
+  content: string = '';
 }

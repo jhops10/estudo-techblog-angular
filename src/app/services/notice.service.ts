@@ -27,6 +27,19 @@ export class NoticeServiceService {
         content:
           'Quem navega na internet, certamente já percebeu que ela conta com diversos recursos para tornar a nossa vida mais fácil. Entre essas opções podemos mencionar os hiperlinks – uma palavra ou termo clicável que direciona o leitor.',
       },
+      {
+        id: 4,
+        title:
+          'O formatador de código Prettier 1.15 adiciona suporte ao angular e Vue.js',
+        content:
+          'A versão 1.15 do Prettier adicionou ao formatador de código suporte para HTML, Vue.js, Angular e MDX, além de uma variedade de refinamentos e melhorias de sintaxe.',
+      },
+      {
+        id: 5,
+        title: 'TypeScript 2.0: o que está por vir',
+        content:
+          'Ander Hejlsberg participou novamente da conferência Microsoft Build de 2016, e dessa vez para falar sobre o estado atual do TypeScript e mostrar as diversas melhorias que estão por vir nos próximos meses.',
+      },
     ];
   }
 }
