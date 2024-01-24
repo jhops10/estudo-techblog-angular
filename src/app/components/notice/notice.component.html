@@ -1,8 +1,17 @@
 <div class="notice">
-  <div class="content">
+  <div class="content favorite" [ngClass]="{ favorite: favorite }">
     <div class="header-content">
       <span>{{ data }}</span>
-      <img src="../../../assets/icons/icon-heart.svg" />
+      <img
+        *ngIf="!favorite"
+        (click)="addToFavorite()"
+        src="../../../assets/icons/icon-heart.svg"
+      />
+      <img
+        *ngIf="favorite"
+        (click)="addToFavorite()"
+        src="../../../assets/icons/icon-heart-active.svg"
+      />
     </div>
     <div class="body-content">
       <h2>{{ title }}</h2>

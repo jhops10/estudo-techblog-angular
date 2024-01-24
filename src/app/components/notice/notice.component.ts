@@ -13,10 +13,16 @@ export class NoticeComponent {
     year: 'numeric',
   };
 
+  favorite: boolean = false;
+
   @Input()
   data: string = this.dataAtual.toLocaleDateString('pt-BR', this.options);
   @Input()
   title: string = '';
   @Input()
   content: string = '';
+
+  addToFavorite() {
+    this.favorite = !this.favorite;
+  }
 }

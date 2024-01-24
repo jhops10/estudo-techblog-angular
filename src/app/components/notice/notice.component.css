@@ -25,6 +25,7 @@
 
 .header-content img {
   width: 20px;
+  cursor: pointer;
 }
 
 .body-content {
@@ -44,4 +45,8 @@
   color: var(--cinza);
   font-family: var(--font-inter);
   font-size: 1rem;
+}
+
+.favorite {
+  border: 1px solid var(--destaques);
 }
