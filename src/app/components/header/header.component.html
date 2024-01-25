@@ -5,8 +5,13 @@
     </div>
     <div class="form-container">
       <form>
-        <!-- <img src="../../../assets/icons/icon-search.svg" /> -->
-        <input type="text" placeholder="Pesquisar no Blog" />
+        <input
+          [(ngModel)]="searchTerm"
+          (input)="onInputChange()"
+          name="searchInput"
+          type="text"
+          placeholder="Pesquisar no Blog"
+        />
       </form>
     </div>
   </div>

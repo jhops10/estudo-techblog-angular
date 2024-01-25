@@ -1,10 +1,12 @@
 <!-- Header -->
 <app-header></app-header>
-<!-- Header -->
+<!-- Lista de Notícias -->
 <div class="main-container">
   <app-notice
-    *ngFor="let notice of notices"
-    title="{{ notice.title }}"
-    content="{{ notice.content }}"
+    *ngFor="
+      let notice of filteredNotices.length > 0 ? filteredNotices : notices
+    "
+    [title]="notice.title"
+    [content]="notice.content"
   ></app-notice>
 </div>
