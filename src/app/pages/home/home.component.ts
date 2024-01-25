@@ -33,6 +33,5 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.notices,
       this.searchTerm
     );
-    console.log(this.filteredNotices);
   }
 }
